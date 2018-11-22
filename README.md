@@ -36,6 +36,7 @@ $ sh user-provision.sh
 * `~/.gowlconfig`
 * `~/.ssh`
 * `~/.vimrc`
+* `~/.vim`
 
 ※ OSが異なる場合に設定が微妙に異なるためシンボリックリンクやmountはしていません
 
