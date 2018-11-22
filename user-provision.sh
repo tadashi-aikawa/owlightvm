@@ -9,11 +9,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 cat >> ~/.bashrc << 'EOF'
 # fzfの設定
-set -x FZF_DEFAULT_OPTS "--reverse --border --height 50%"
+set FZF_DEFAULT_OPTS="--reverse --border --height 50%"
 # fzfのCtrl+T設定 ファイルの中身を表示して200行をプレビュー
-set -x FZF_CTRL_T_OPTS "--preview 'bat --color \"always\" {}' --height 90%"
+set FZF_CTRL_T_OPTS="--preview 'bat --color \"always\" {}' --height 90%"
 # fzfのALt+C設定 ツリー表示して200行をプレビュー
-set -x FZF_ALT_C_OPTS "--preview 'tree -C {} | head -200' --height 90%"
+set FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200' --height 90%"
 EOF
 
 # pureline
