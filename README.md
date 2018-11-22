@@ -46,3 +46,10 @@ $ vagrant provision
 ```
 
 ※ Dockerのインストールだけ毎回走るのでご注意
+
+
+### 削除
+
+```
+$ vagrant destroy
+```
