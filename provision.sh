@@ -17,6 +17,9 @@ chmod +x /usr/local/bin/z
 apt install -y python-pip
 pip install awscli
 
+# tree
+apt install -y tree
+
 # bat
 wget https://github.com/sharkdp/bat/releases/download/v0.9.0/bat-v0.9.0-x86_64-unknown-linux-musl.tar.gz -O bat.tar.gz
 tar zvfx bat.tar.gz
