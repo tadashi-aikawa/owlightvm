@@ -38,3 +38,6 @@ tar zvfx ripgrep.tar.gz
 mv ripgrep-*-unknown-linux-musl/rg /usr/local/bin/
 chmod +x /usr/local/bin/rg
 
+# Uninstall nano
+dpkg -P nano
+
