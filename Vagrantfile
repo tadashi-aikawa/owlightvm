@@ -29,5 +29,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source: "~/.vimrc", destination: ".vimrc"
   config.vm.provision "file", source: "~/.vim/dein.toml", destination: ".vim/dein.toml"
   config.vm.provision "file", source: "~/.vim/dein_lazy.toml", destination: ".vim/dein_lazy.toml"
+  config.vm.provision "file", source: ".tmux.conf", destination: ".tmux.conf"
+
 end
 
