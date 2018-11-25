@@ -15,6 +15,9 @@ Vagrant.configure("2") do |config|
     vb.memory = "2048"
   end
 
+  # sync
+  config.vm.synced_folder "./", "/vagrant"
+
   # Install docker
   config.vm.provision "docker"
 
