@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
   # Provision others
   config.vm.provision :shell, :path => "provision.sh"
   config.vm.provision "file", source: "./user-provision.sh", destination: "user-provision.sh"
+  config.vm.provision "file", source: "~/.gitconfig", destination: ".gitconfig"
   config.vm.provision "file", source: "~/.gowlconfig", destination: ".gowlconfig"
   config.vm.provision "file", source: "~/.ssh", destination: ".ssh"
   config.vm.provision "file", source: "~/.vimrc", destination: ".vimrc"
