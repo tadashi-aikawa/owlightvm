@@ -3,7 +3,7 @@
 cd /tmp
 
 # gowl
-wget https://github.com/tadashi-aikawa/gowl/releases/download/v0.4.0/gowl-0.4.0-x86_64-linux.tar.gz -O gowl.tar.gz
+wget https://github.com/tadashi-aikawa/gowl/releases/download/v0.5.0/gowl-0.5.0-x86_64-linux.tar.gz -O gowl.tar.gz
 tar zvfx gowl.tar.gz
 mv dist/* /usr/local/bin/
 chmod +x /usr/local/bin/gowl
