@@ -38,6 +38,12 @@ tar zvfx ripgrep.tar.gz
 mv ripgrep-*-unknown-linux-musl/rg /usr/local/bin/
 chmod +x /usr/local/bin/rg
 
+# node/npm (必要なら)
+# apt-get install -y nodejs npm
+# npm install n -g
+# n lts
+# ln -sf /usr/local/bin/node /usr/bin/node
+
 # Uninstall nano
 dpkg -P nano
 
