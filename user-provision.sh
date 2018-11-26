@@ -27,11 +27,14 @@ alias cdr='cd $(fd -H -t d | fzf)'
 alias cdz='cd $(z -l | cut -c 12- | fzf)'
 alias cdg='cd $(gowl list | fzf)'
 
+alias gd='git diff'
 alias gf='git fetch'
-alias gl='git log --oneline --all --graph --decorate'
+alias gl='git log'
+alias gll='git log --oneline --all --graph --decorate'
 alias gs='git status --short'
 alias gsv='git status -v'
-alias gcv='git com -vgd=git diff'
+alias gcm='git commit -m'
+alias gcv='git commit -v'
 EOF
 
 # ssh
