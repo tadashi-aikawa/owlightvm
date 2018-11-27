@@ -27,14 +27,16 @@ alias cdr='cd $(fd -H -t d | fzf)'
 alias cdz='cd $(z -l | cut -c 12- | fzf)'
 alias cdg='cd $(gowl list | fzf)'
 
+alias gc='git checkout $(git branch -l | grep -vE "^\*" | tr -d " " | fzf)'
+alias gcm='git commit -m'
+alias gcr='git branch -rl | grep -vE "HEAD|master" | tr -d " " | sed -r "s@origin/@@g" | fzf | xargs -i git checkout -b {} origin/{}'
+alias gcv='git commit -v'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl='git log'
 alias gll='git log --oneline --all --graph --decorate'
 alias gs='git status --short'
 alias gsv='git status -v'
-alias gcm='git commit -m'
-alias gcv='git commit -v'
 EOF
 
 # ssh
