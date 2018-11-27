@@ -33,6 +33,7 @@ $ sh user-provision.sh
 
 以下のファイルはprovisioning時にホストの設定をそのまま同期します。
 
+* `~/.gitconfig`
 * `~/.gowlconfig`
 * `~/.ssh`
 * `~/.vimrc`
