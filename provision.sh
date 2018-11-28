@@ -101,10 +101,10 @@ function github_install() {
 
 # gowl
 github_install gowl \
-  "https://github.com/tadashi-aikawa/gowl/releases/download/v0.5.1/gowl-0.5.1-x86_64-linux.tar.gz" \
+  "https://github.com/tadashi-aikawa/gowl/releases/download/v0.5.2/gowl-0.5.2-x86_64-linux.tar.gz" \
   "dist/*" \
   "gowl -V | head -1" \
-  "0.5.1"
+  "0.5.2"
 
 # bat
 github_install bat \
