@@ -33,6 +33,7 @@ alias gcr='git branch -rl | grep -vE "HEAD|master" | tr -d " " | sed -r "s@origi
 alias gcv='git commit -v'
 alias gd='git diff'
 alias gf='git fetch'
+alias gfx='for d in $(ls | fzf --multi); do cd $d && echo [$d] && git fetch --all --prune -q && git rev-list --count --left-right @{upstream}...HEAD | awk '{print " ↓"$1" ↑"$2}' && cd ..; done'
 alias gl='git log'
 alias gll='git log --oneline --all --graph --decorate'
 alias gs='git status --short'
