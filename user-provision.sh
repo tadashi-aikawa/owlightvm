@@ -27,6 +27,8 @@ alias cdr='cd $(fd -H -t d | fzf)'
 alias cdz='cd $(z -l | cut -c 12- | fzf)'
 alias cdg='cd $(gowl list | fzf)'
 
+alias ga='git add'
+alias gaa='git add --all'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl='git log'
